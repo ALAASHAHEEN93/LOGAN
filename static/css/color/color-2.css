@@ -1,32 +1,32 @@
 :root {
-  --main-color: #009efd; 
+  --main-color: #fee140; 
 }
 
 ::selection {
-  background-color:#009efd;
+  background-color:#fee140;
   color: #fff;
 }
 ::-moz-selection {
-  background-color:#009efd;
+  background-color:#fee140;
   color: #fff;
 }
 
 
 
 .theme-color {
-  color:#009efd;
+  color:#fee140;
 }
 
 
 .theme-after-bg:after,
 .btn-theme,
 .theme-bg {
-  background:#009efd;
+  background:#fee140;
 }
 
 
 .btn-theme {
-  border-color:#009efd;
+  border-color:#fee140;
 }
 
 .portfolio-hover-01 .action-btn a:hover,
@@ -38,17 +38,17 @@
 .m-btn-white:hover,
 .theme-after:after,
 .theme-g-bg{
-	background: #009efd;
-	background: -webkit-linear-gradient(to right, #2af598, #009efd);
-	background: linear-gradient(to right, #2af598, #009efd);
+	background: #fee140;
+	background: -webkit-linear-gradient(to right, #fa709a, #fee140);
+	background: linear-gradient(to right, #fa709a, #fee140);
 }
 
 
 /*Reverce*/
 .m-btn-theme:hover{
 	background: #0072ff;
-	background: -webkit-linear-gradient(to right, #009efd, #2af598);
-	background: linear-gradient(to right, #009efd, #2af598);
+	background: -webkit-linear-gradient(to right, #fee140, #fa709a);
+	background: linear-gradient(to right, #fee140, #fa709a);
 }
 
 .home-banner .avtar-img,
@@ -59,7 +59,7 @@
 
 @media (max-width: 991px){
   .header {
-    background:#009efd;
+    background:#fee140;
   }
 }
 

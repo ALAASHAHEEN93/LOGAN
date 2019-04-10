@@ -85,6 +85,9 @@ Table of contents
   bottom: 0;
   margin: auto;
 }
+.row{
+    margin:0px;
+}
 
 @-webkit-keyframes rotate {
   0%{
@@ -992,7 +995,7 @@ img {
 /*------------------------------
 * Services
 -------------------------------*/
-.carousel {
+/* .carousel {
 	margin: 0 auto;
 	padding: 0 70px;
 }
@@ -1001,7 +1004,7 @@ img {
 	overflow: hidden;
     min-height: 120px;
 	font-size: 13px;
-}
+} */
 .carousel .media {
 	position: relative;
 	padding: 0 0 0 20px;
@@ -1091,7 +1094,6 @@ a.carousel-control.right.carousel-control-next{
   position: relative;
   z-index: 1;
   background: #fff;
-  margin: 15px 0;
   border-radius: 5px;
   box-shadow: 0px 1px 27px -3px rgba(0, 0, 0, 0.2);
 }

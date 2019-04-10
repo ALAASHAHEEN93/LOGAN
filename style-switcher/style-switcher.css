@@ -215,27 +215,3 @@ a[data-code="color-19"] {
     color: #000;
     text-decoration: none !important;
 }
-
-
-span.theme-buy-now {
-    position: fixed;
-    top: 190px;
-    left: -45px;
-    z-index: 99;
-    transform: rotate(-90deg);
-}
-
-span.theme-buy-now a {
-	display: block;
-	background: #111;
-	padding: 8px 20px;
-	color: #fff;
-    font-size: 12px;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    text-decoration: none;
-}
-span.theme-buy-now a i {
-	margin-left: 5px;
-}
