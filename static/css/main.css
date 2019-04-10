@@ -33,7 +33,7 @@ Table of contents
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
 
 :root {
-  --main-color: #009efd; 
+  --main-color: #009efd;
 }
 
 
@@ -262,22 +262,23 @@ img {
   text-transform: uppercase;
   letter-spacing: 2.5px;
   font-weight: 500;
-  border: none;
-  border-radius: 45px;
+  border: 2px solid white;
+  border-radius: 11px;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease 0s;
   cursor: pointer;
   outline: none;
   display: inline-block;
   text-decoration: none !important;
+  background: transparent !important;
 }
+
 .m-btn-white {
-  color: #151515;
-  background-color: #fff;
+  color: black;
 }
 
 .m-btn-white:hover {
-  color: #fff;
+  color: black;
   /*-webkit-transform: translateY(-7px);
      -moz-transform: translateY(-7px);
        -o-transform: translateY(-7px);
@@ -463,7 +464,7 @@ img {
   font-weight: 700;
   margin-bottom: 10px;
   text-transform: uppercase;
-  color: black;
+  color: white;
 }
 
 .home-text-center p {
@@ -526,8 +527,12 @@ img {
   padding: 12px 10px;
   background: #111;
   box-shadow: 0px 1px 27px -3px rgba(0, 0, 0, 0.2);
+  color: black
 }
 
+.fixed-header a {
+  color: black !important;
+}
 
 @media (max-width: 991px){
 
@@ -555,23 +560,13 @@ img {
 
 
 .header-nav-white .navbar-nav .nav-link {
-  color: #333;
   font-weight: 600;
-}
-.header-nav-white .navbar-nav .nav-link:after {
-  background: #333;
-}
-.header-nav-white .navbar-brand {
-  color: #333;
 }
 
 .header-nav-white.fixed-header {
   background: #fff;
 }
 
-.header-nav-white .navbar-toggler span {
-  background: #333;
-}
 
 
 /*---------------------------------
@@ -591,6 +586,9 @@ img {
        -o-background-size: cover;
           background-size: cover;
 }
+
+
+
 
 .home-banner .particles-js-canvas-el {
   position: absolute;
@@ -727,15 +725,38 @@ img {
 /*-----------------------------------------
 *  Home Banner
 -----------------------------------------*/
+
+
 .home-banner-02 {
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background: linear-gradient(rgba(110, 1, 255, 0.46), rgb(7, 43, 175));
   background-position: bottom center;
   -webkit-background-size: 100% auto;
      -moz-background-size: 100% auto;
        -o-background-size: 100% auto;
           background-size: 100% auto;
 }
+.home-banner-02::after{
+  content: "";
+  background-image: url('https://starwarsblog.starwars.com/wp-content/uploads/2017/02/rogue-one-home-ent-tall-B-1536x864.jpg');
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.home-banner-svg{
+  position: absolute;
+bottom: 0;
+width: 100%;
+height: 100px;
+}
+
 
 .home-banner-02 h4 {
   font-size: 25px;
@@ -754,13 +775,12 @@ img {
   font-weight: 400;
   font-size: 18px;
   padding: 0 0 35px;
-  color: #222;
   margin: 0;
 }
 
 .home-banner-02 .m-btn {
   min-width: 160px;
-  margin: 8px;
+  margin: 8px;  
 }
 
 @media (max-width: 767px){
@@ -1022,7 +1042,6 @@ img {
     color: #808080;
     position: relative;
     padding: 15px;
-    background: #f1f1f1;
     border: 1px solid #efefef;
     border-radius: 3px;
 	margin-bottom: 15px;
@@ -1083,11 +1102,6 @@ a.carousel-control.right.carousel-control-next{
     top: -38px;
 }
 
- 
-.services-section {
-  margin-top: -85px;
-  padding-top: 170px;
-}
 .feature-box-02 {
   padding: 35px 8%;
   text-align: center;
@@ -4375,5 +4389,4 @@ width: 35px;
   .sm-p-25-b {padding-bottom: 25%;}
   .sm-p-25-half-b {padding-bottom: 25.5%;}
 }
-
 
